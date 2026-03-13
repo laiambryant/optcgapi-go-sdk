@@ -2,7 +2,12 @@
 
 A Go SDK for the [One Piece TCG API](https://optcgapi.com/documentation).
 
-Zero external dependencies. 100% test coverage.
+[![Go Reference](https://pkg.go.dev/badge/github.com/laiambryant/optcgapi-go-sdk.svg)](https://pkg.go.dev/github.com/laiambryant/optcgapi-go-sdk)
+[![Go Report Card](https://goreportcard.com/badge/github.com/laiambryant/optcgapi-go-sdk)](https://goreportcard.com/report/github.com/laiambryant/optcgapi-go-sdk)
+[![GitHub license](https://img.shields.io/github/license/laiambryant/optcgapi-go-sdk.svg)](https://github.com/laiambryant/optcgapi-go-sdk/blob/main/LICENSE)
+[![GitHub issues](https://img.shields.io/github/issues/laiambryant/optcgapi-go-sdk.svg)](https://github.com/laiambryant/optcgapi-go-sdk/issues)
+[![GitHub stars](https://img.shields.io/github/stars/laiambryant/optcgapi-go-sdk.svg)](https://github.com/laiambryant/optcgapi-go-sdk/stargazers)
+[![Coverage Status](https://coveralls.io/repos/github/laiambryant/optcgapi-go-sdk/badge.svg?branch=main)](https://coveralls.io/github/laiambryant/optcgapi-go-sdk?branch=main)
 
 ## Installation
 
