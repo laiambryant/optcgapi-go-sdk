@@ -1,5 +1,9 @@
 package models
 
+import (
+	"encoding/json"
+)
+
 // Card represents a single One Piece TCG card as returned by the OPTCG API.
 // Fields that may be null in the API response are pointer types so callers can
 // distinguish an absent value from a zero value.
@@ -42,4 +46,36 @@ type Card struct {
 	CardImageID string `json:"card_image_id"`
 	// CardImage is the URL of the card image.
 	CardImage string `json:"card_image"`
+}
+
+// UnmarshalJSON handles counter_amount being sent as either a JSON string or a
+// JSON number, depending on the API endpoint.
+func (c *Card) UnmarshalJSON(data []byte) error {
+	type noMethod Card
+	var raw struct {
+		noMethod
+		CounterAmount json.RawMessage `json:"counter_amount"`
+	}
+	if err := json.Unmarshal(data, &raw); err != nil {
+		return err
+	}
+	*c = Card(raw.noMethod)
+	c.CounterAmount = parseFlexString(raw.CounterAmount)
+	return nil
+}
+
+func parseFlexString(data json.RawMessage) *string {
+	if len(data) == 0 || string(data) == "null" {
+		return nil
+	}
+	var s string
+	if err := json.Unmarshal(data, &s); err == nil {
+		return &s
+	}
+	var n json.Number
+	if err := json.Unmarshal(data, &n); err != nil {
+		return nil
+	}
+	str := n.String()
+	return &str
 }

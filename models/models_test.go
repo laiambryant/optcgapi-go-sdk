@@ -100,6 +100,23 @@ func TestCardCharacterUnmarshal(t *testing.T) {
 	}
 }
 
+func TestCardNumericCounterAmount(t *testing.T) {
+	data := `{
+		"card_name": "Nami", "set_name": "Romance Dawn", "card_text": "",
+		"set_id": "OP-01", "rarity": "Common", "card_set_id": "OP01-016",
+		"card_color": "green", "card_type": "Character", "sub_types": "",
+		"attribute": "", "date_scraped": "", "card_image_id": "", "card_image": "",
+		"counter_amount": 1000
+	}`
+	var c Card
+	if err := json.Unmarshal([]byte(data), &c); err != nil {
+		t.Fatalf("unexpected error: %v", err)
+	}
+	if c.CounterAmount == nil || *c.CounterAmount != "1000" {
+		t.Fatalf("expected counter_amount 1000, got %v", c.CounterAmount)
+	}
+}
+
 func TestSetUnmarshal(t *testing.T) {
 	data := `{"set_name": "Romance Dawn", "set_id": "OP-01"}`
 	var s Set
