@@ -6,7 +6,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/laiambryant/optcgapi-go-sdk/enums"
+	"github.com/laiambryant/optcgapi-sdk-go/enums"
 )
 
 func TestBuildEmpty(t *testing.T) {

@@ -7,7 +7,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/laiambryant/optcgapi-go-sdk/client"
+	"github.com/laiambryant/optcgapi-sdk-go/client"
 )
 
 type fakeHTTP struct {

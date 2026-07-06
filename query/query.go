@@ -5,7 +5,7 @@ import (
 	"net/url"
 	"strings"
 
-	"github.com/laiambryant/optcgapi-go-sdk/enums"
+	"github.com/laiambryant/optcgapi-sdk-go/enums"
 )
 
 // Query is a fluent builder for filtered endpoint query parameters. Create one
@@ -37,7 +37,7 @@ func (q *Query) CardName(name string) *Query {
 	return q
 }
 
-// Color filters cards by colour.
+// Color filters cards by color.
 func (q *Query) Color(color enums.Color) *Query {
 	q.add("color", string(color))
 	return q

@@ -5,8 +5,8 @@ import (
 	"net/http"
 	"testing"
 
-	"github.com/laiambryant/optcgapi-go-sdk/client"
-	"github.com/laiambryant/optcgapi-go-sdk/query"
+	"github.com/laiambryant/optcgapi-sdk-go/client"
+	"github.com/laiambryant/optcgapi-sdk-go/query"
 )
 
 type fakeHTTPClient struct {

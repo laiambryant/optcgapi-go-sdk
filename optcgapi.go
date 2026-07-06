@@ -4,17 +4,17 @@ import (
 	"context"
 	"net/url"
 
-	"github.com/laiambryant/optcgapi-go-sdk/client"
-	"github.com/laiambryant/optcgapi-go-sdk/endpoint"
-	"github.com/laiambryant/optcgapi-go-sdk/models"
-	"github.com/laiambryant/optcgapi-go-sdk/query"
+	"github.com/laiambryant/optcgapi-sdk-go/client"
+	"github.com/laiambryant/optcgapi-sdk-go/endpoint"
+	"github.com/laiambryant/optcgapi-sdk-go/models"
+	"github.com/laiambryant/optcgapi-sdk-go/query"
 )
 
 // OPTCGAPI is the top-level SDK client. Create one with [New] and call its
 // methods to interact with the One Piece TCG API.
 type OPTCGAPI struct {
-	// Client is the underlying HTTP client. It can be used to customise
-	// transport behaviour directly, but in most cases the functional options
+	// Client is the underlying HTTP client. It can be used to customize
+	// transport behavior directly, but in most cases the functional options
 	// passed to [New] are sufficient.
 	Client       *client.Client
 	sets         *endpoint.Endpoint[[]models.Set]

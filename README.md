@@ -1,27 +1,27 @@
-# optcgapi-go-sdk
+# OPTCG API Go SDK
 
 A Go SDK for the [One Piece TCG API](https://optcgapi.com/documentation).
 
-[![Go Reference](https://pkg.go.dev/badge/github.com/laiambryant/optcgapi-go-sdk.svg)](https://pkg.go.dev/github.com/laiambryant/optcgapi-go-sdk)
-[![Go Report Card](https://goreportcard.com/badge/github.com/laiambryant/optcgapi-go-sdk)](https://goreportcard.com/report/github.com/laiambryant/optcgapi-go-sdk)
-[![GitHub license](https://img.shields.io/github/license/laiambryant/optcgapi-go-sdk.svg)](https://github.com/laiambryant/optcgapi-go-sdk/blob/main/LICENSE)
-[![GitHub issues](https://img.shields.io/github/issues/laiambryant/optcgapi-go-sdk.svg)](https://github.com/laiambryant/optcgapi-go-sdk/issues)
-[![GitHub stars](https://img.shields.io/github/stars/laiambryant/optcgapi-go-sdk.svg)](https://github.com/laiambryant/optcgapi-go-sdk/stargazers)
-[![Coverage Status](https://coveralls.io/repos/github/laiambryant/optcgapi-go-sdk/badge.svg?branch=main)](https://coveralls.io/github/laiambryant/optcgapi-go-sdk?branch=main)
+[![Go Reference](https://pkg.go.dev/badge/github.com/laiambryant/optcgapi-sdk-go.svg)](https://pkg.go.dev/github.com/laiambryant/optcgapi-sdk-go)
+[![Go Report Card](https://goreportcard.com/badge/github.com/laiambryant/optcgapi-sdk-go)](https://goreportcard.com/report/github.com/laiambryant/optcgapi-sdk-go)
+[![GitHub license](https://img.shields.io/github/license/laiambryant/optcgapi-sdk-go.svg)](https://github.com/laiambryant/optcgapi-sdk-go/blob/main/LICENSE)
+[![GitHub issues](https://img.shields.io/github/issues/laiambryant/optcgapi-sdk-go.svg)](https://github.com/laiambryant/optcgapi-sdk-go/issues)
+[![GitHub stars](https://img.shields.io/github/stars/laiambryant/optcgapi-sdk-go.svg)](https://github.com/laiambryant/optcgapi-sdk-go/stargazers)
+[![Coverage Status](https://coveralls.io/repos/github/laiambryant/optcgapi-sdk-go/badge.svg?branch=main)](https://coveralls.io/github/laiambryant/optcgapi-sdk-go?branch=main)
 
 ## Installation
 
 ```bash
-go get github.com/laiambryant/optcgapi-go-sdk
+go get github.com/laiambryant/optcgapi-sdk-go
 ```
 
 ## Quick start
 
 ```go
 import (
-    optcgapi "github.com/laiambryant/optcgapi-go-sdk"
-    "github.com/laiambryant/optcgapi-go-sdk/query"
-    "github.com/laiambryant/optcgapi-go-sdk/enums"
+    optcgapi "github.com/laiambryant/optcgapi-sdk-go"
+    "github.com/laiambryant/optcgapi-sdk-go/query"
+    "github.com/laiambryant/optcgapi-sdk-go/enums"
 )
 
 sdk := optcgapi.New()
@@ -65,7 +65,7 @@ sdk := optcgapi.New(
 | Option | Default |
 |--------|---------|
 | `WithBaseURL` | `https://www.optcgapi.com/api` |
-| `WithUserAgent` | `optcgapi-go-sdk` |
+| `WithUserAgent` | `optcgapi-sdk-go` |
 | `WithCache(ttl)` | disabled |
 | `WithHTTPClient` | `http.DefaultClient` |
 

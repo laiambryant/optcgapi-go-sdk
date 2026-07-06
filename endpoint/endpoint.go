@@ -4,7 +4,7 @@ import (
 	"context"
 	"encoding/json"
 
-	"github.com/laiambryant/optcgapi-go-sdk/client"
+	"github.com/laiambryant/optcgapi-sdk-go/client"
 )
 
 // Endpoint is a generic HTTP endpoint that fetches a path and unmarshals the

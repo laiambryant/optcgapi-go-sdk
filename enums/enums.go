@@ -1,6 +1,6 @@
 package enums
 
-// Color represents a One Piece TCG card colour used in filter parameters.
+// Color represents a One Piece TCG card color used in filter parameters.
 type Color string
 
 const (
@@ -26,16 +26,16 @@ const (
 type Rarity string
 
 const (
-	RarityCommon      Rarity = "Common"
-	RarityUncommon    Rarity = "Uncommon"
-	RarityRare        Rarity = "Rare"
-	RaritySuperRare   Rarity = "Super Rare"
-	RaritySecretRare  Rarity = "Secret Rare"
-	RarityLeader      Rarity = "Leader"
-	RarityPromo       Rarity = "Promo"
-	RaritySpecial     Rarity = "Special"
-	RarityManga       Rarity = "Manga"
-	RarityTreasure    Rarity = "Treasure Rare"
+	RarityCommon       Rarity = "Common"
+	RarityUncommon     Rarity = "Uncommon"
+	RarityRare         Rarity = "Rare"
+	RaritySuperRare    Rarity = "Super Rare"
+	RaritySecretRare   Rarity = "Secret Rare"
+	RarityLeader       Rarity = "Leader"
+	RarityPromo        Rarity = "Promo"
+	RaritySpecial      Rarity = "Special"
+	RarityManga        Rarity = "Manga"
+	RarityTreasure     Rarity = "Treasure Rare"
 	RarityAlternateArt Rarity = "Alternate Art"
 )
 

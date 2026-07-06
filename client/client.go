@@ -28,13 +28,13 @@ type Client struct {
 }
 
 // NewHTTPClient creates a Client with the OPTCG API base URL and the
-// optcgapi-go-sdk user-agent. If httpClient is nil, http.DefaultClient is
+// optcgapi-sdk-go user-agent. If httpClient is nil, http.DefaultClient is
 // used. Provide [Option] values to override any of these defaults.
 func NewHTTPClient(httpClient HTTPClient, opts ...Option) *Client {
 	c := &Client{
 		BaseURL:   "https://www.optcgapi.com/api",
 		HTTP:      httpClient,
-		UserAgent: "optcgapi-go-sdk",
+		UserAgent: "optcgapi-sdk-go",
 	}
 	if c.HTTP == nil {
 		c.HTTP = http.DefaultClient

@@ -16,7 +16,7 @@ type Card struct {
 	CardName string `json:"card_name"`
 	// SetName is the name of the set this card belongs to.
 	SetName string `json:"set_name"`
-	// CardText is the card effect or flavour text.
+	// CardText is the card effect or flavor text.
 	CardText string `json:"card_text"`
 	// SetID is the set identifier (e.g. "OP-01").
 	SetID string `json:"set_id"`
@@ -24,7 +24,7 @@ type Card struct {
 	Rarity string `json:"rarity"`
 	// CardSetID is the card's unique set identifier (e.g. "OP01-001").
 	CardSetID string `json:"card_set_id"`
-	// CardColor is the card colour (e.g. "red", "blue").
+	// CardColor is the card color (e.g. "red", "blue").
 	CardColor string `json:"card_color"`
 	// CardType is the card type (e.g. "Leader", "Character", "Event", "Stage").
 	CardType string `json:"card_type"`

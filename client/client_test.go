@@ -179,7 +179,7 @@ func TestNewHTTPClientDefaults(t *testing.T) {
 	if c.BaseURL != "https://www.optcgapi.com/api" {
 		t.Fatalf("unexpected default BaseURL: %s", c.BaseURL)
 	}
-	if c.UserAgent != "optcgapi-go-sdk" {
+	if c.UserAgent != "optcgapi-sdk-go" {
 		t.Fatalf("unexpected default UserAgent: %s", c.UserAgent)
 	}
 	if c.HTTP == nil {

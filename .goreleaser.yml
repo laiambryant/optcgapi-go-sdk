@@ -1,4 +1,4 @@
-project_name: optcgapi-go-sdk
+project_name: optcgapi-sdk-go
 builds:
   - skip: true
 checksum:
